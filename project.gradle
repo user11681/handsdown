@@ -1,7 +1,9 @@
-version = "0.0.1"
+version = "0.1.0"
 
 dependencies {
     modApi include("${project.optional}")
     modApi include("${project.bason}")
     modApi include("${project.apiResourceLoader}")
+
+    modApi "${project.modMenu}"
 }

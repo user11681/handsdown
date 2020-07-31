@@ -36,11 +36,9 @@ repositories {
     }
 }
 
-final String minecraftVersion = "1.16.2-pre1"
-
 dependencies {
-    minecraft "com.mojang:minecraft:${minecraftVersion}"
-    mappings "${"net.fabricmc:yarn:${minecraftVersion}+build.${yarn}:v2"}"
+    minecraft "com.mojang:minecraft:${project.minecraftVersion}"
+    mappings "${"net.fabricmc:yarn:${project.minecraftVersion}+build.${project.yarn}:v2"}"
     modImplementation "${project.loader}"
 
     compileOnly "${project.jetbrainsAnnotations}"

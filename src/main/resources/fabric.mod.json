@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "handsdown",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "name": "hands down",
     "description": "a mod that hides the first-person arm from when it does not hold anything",
     "authors": [
@@ -16,6 +16,11 @@
     "mixins": [
         "handsdown.mixins.json"
     ],
+    "entrypoints": {
+        "modmenu": [
+            "user11681.handsdown.integration.HandsDownModMenuEntry"
+        ]
+    },
     "depends": {
         "fabricloader": "*"
     }
